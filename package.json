@@ -1,0 +1,29 @@
+{
+  "name": "dethra",
+  "version": "0.1.0",
+  "description": "Dethra's Castle - MiniLD 62 Entry",
+  "main": "index.js",
+  "scripts": {
+    "cprequire": "mkdir -p dist; cp node_modules/requirejs/*.js dist",
+    "build": "npm run optimize; npm run cprequire",
+    "optimize": "./node_modules/.bin/r.js -o baseUrl=src name=main out=dist/main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/killscreen/dethra.git"
+  },
+  "keywords": [
+    "game",
+    "opengl"
+  ],
+  "devDependencies": {
+    "requirejs": "^2.0.0"
+  },
+  "author": "Victor Woeltjen",
+  "license": "GPLv3",
+  "bugs": {
+    "url": "https://github.com/killscreen/dethra/issues"
+  },
+  "homepage": "https://github.com/killscreen/dethra"
+}
